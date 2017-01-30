@@ -1,7 +1,7 @@
 $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
 	$('.logo').css({
-		'transform': 'translate(0px, '+ wScroll /2 +'%)'
+		'transform': 'translate(0px, '+ wScroll /2.5 +'%)'
 	});
 
 	$('.back-bird').css({
