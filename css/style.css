@@ -71,11 +71,37 @@ img{
 	opacity: 0;
 	transform: translateX(20px);
 	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.clothes-pics figure:hover figcaption{
+	left: 0%;
 }
 
 .clothes-pics figure.is-showing{
 	opacity: 1;
 	transform: translateX(0px);
+}
+.clothes-pics figure figcaption{
+	position: absolute;
+	bottom: 10px;
+	left: -100%;
+	background-color: black;
+	color: white;
+	padding: 2px 8px;
+	font-size: 11px;
+	transition: all 0.3s ease-in-out;
+}
+
+.clothes-pics figure img{
+	display: block;
+	transform: scale(1);
+	transition: all 0.3s ease-in-out;
+}
+
+.clothes-pics figure img:hover{
+	transform: scale(1.1);
 }
 
 .large-window{
